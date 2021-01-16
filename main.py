@@ -1,9 +1,9 @@
 # Create chatbot
 
 
-# train all Data
+# Train all Data
 
-# train chatbot with your custom data
+# Train chatbot with your custom data
 
-#Start chatbot
+# Start chatbot
 
