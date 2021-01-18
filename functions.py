@@ -1,12 +1,14 @@
+
 # Function to create the chatbot
 # We have the read_only to false so the chatbot learns from the user input as
-def create_bot(name)
-    from chatterbot import Chatbot
-    Bot = ChatBot(name = name,
-                  read_only = False,
-                  logic_adapters = ["chatterbot.logic.BestMatch"],
-                  storage_adapter = "chatterbot.storage.SQLStorageAdapter")
+def create_bot(name):
+    from chatterbot import ChatBot
+    Bot = ChatBot(name=name,
+                  read_only=False,
+                  logic_adapters=["chatterbot.logic.BestMatch"],
+                  storage_adapter="chatterbot.storage.SQLStorageAdapter")
     return Bot
+
 
 # Function to train the bot with a variety of topics
 # The language we have chosen is english
@@ -32,7 +34,7 @@ def start_chatbot(Bot):
     print("Hello, I am Jordan. How can I Help you")
     bye_list = ["bye jordan", "bye", "good bye"]
 
-    while(True):
+    while (True):
         user_input == input("me: ")
         if user_input.lower() in bye_list:
             print("Jordan: Good bye and have a blessed day!")
