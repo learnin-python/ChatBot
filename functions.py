@@ -1,5 +1,12 @@
 # Function to create the chatbot
 # We have the read_only to false so the chatbot learns from the user input as
+def create_bot(name)
+    from chatterbot import Chatbot
+    Bot = ChatBot(name = name,
+                  read_only = False,
+                  logic_adapters = ["chatterbot.logic.BestMatch"],
+                  storage_adapter = "chatterbot.storage.SQLStorageAdapter")
+    return Bot
 
 
 
