@@ -8,13 +8,13 @@ def create_bot(name)
                   storage_adapter = "chatterbot.storage.SQLStorageAdapter")
     return Bot
 
-
-
 # Function to train the bot with a variety of topics
 # The language we have chosen is english
 # We can train the bot for other languages as well
-
-
+def train_all_data(Bot):
+    from chatterbot.trainers import ChatterBotCorpusTrainer
+    corpus_trainer = ChatterBotCorpusTrainer(Bot)
+    corpus_trainer.train("chatterbot.corpus.english")
 
 
 # Function to train the bot with custom data
