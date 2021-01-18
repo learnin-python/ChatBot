@@ -19,7 +19,10 @@ def train_all_data(Bot):
 
 # Function to train the bot with custom data
 # It uses listTrainer to train data from Lists
-
+def custom_train(Bot, conversation):
+    from chatterbot.trainers import ListenTrainer
+    trainer = ListenTrainer(Bot)
+    trainer.train(conversation)
 
 
 # Function to start and take responses form the chatbot
