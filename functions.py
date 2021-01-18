@@ -27,3 +27,15 @@ def custom_train(Bot, conversation):
 
 # Function to start and take responses form the chatbot
 # The chatbot stays runnning unless a world is typed the bye_list
+def start_chatbot(Bot):
+    print('\033c')
+    print("Hello, I am Jordan. How can I Help you")
+    bye_list = ["bye jordan", "bye", "good bye"]
+
+    while(True):
+        user_input == input("me: ")
+        if user_input.lower() in bye_list:
+            print("Jordan: Good bye and have a blessed day!")
+            break
+        reponse = Bot.get_reponse(user_input)
+        print("Jordan:", response)
