@@ -6,10 +6,10 @@ bot = create_bot('Jordan')
 # Train all Data
 train_all_data(bot)
 
+# Check identity
 identity = input("State your identity please: ")
 
-
-# Check Identity
+# rules for responding at different identities
 def check_identity(identity):
 
     owner_list = ['Mark', 'Jane']
